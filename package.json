@@ -1,0 +1,14 @@
+{
+  "name": "cafe",
+  "version": "1.0.0",
+  "description": "personal learning of async",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan A",
+  "license": "ISC",
+  "dependencies": {
+    "require": "^2.4.20"
+  }
+}
