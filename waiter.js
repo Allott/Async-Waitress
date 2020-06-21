@@ -13,17 +13,14 @@ let menu = [1000, 2000, 3000, 4000, 5000];//menu is just the cook times
 let customers = [c1,c2,c3,c4,c5];
 
 
-function serveCustomer(customer) {
+async function serveCustomer(customer) {
     console.log(`serving ${customer.id}`);
-    return customer.placeOrder(menu)
-        .then(order => {
-            console.log(`order ${customer.id}`);
-            return cook.preperFood(order)
-        })
-        .then(food => {
-            console.log(`eat ${customer.id}`);
-            return customer.eatAndPay(food)
-        });
+    let order = await customer.placeOrder(menu);
+    console.log(`ordered ${customer.id}`);
+    let food = await cook.preperFood(order);
+    console.log(`cooked ${customer.id}`);
+    let tip = await customer.eatAndPay(food);
+    console.log(`paid ${customer.id}`);
 }
 
 function serverCustomers(customers) {

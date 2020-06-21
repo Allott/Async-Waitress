@@ -4,8 +4,9 @@ class Customer {
         this.id = ++count;
      }
 
-    placeOrder(menu) {
-        return new Promise(order => {
+     async placeOrder (menu) {
+
+        let promise = new Promise(order => {
 
             setTimeout(function(){
 
@@ -14,10 +15,16 @@ class Customer {
 
             }, Math.floor(Math.random() * 4000));//random amount of time to order
         });
+
+        let result = await promise;
+
+        return result;
+
     }
 
-    eatAndPay(food) {
-        return new Promise(tip => {
+    async eatAndPay(food) {
+
+        let promise =  new Promise(tip => {
 
             setTimeout(function(){
 
@@ -27,6 +34,11 @@ class Customer {
             }, Math.floor(Math.random() * 4000));//random amount of time to eat
             
         });
+
+        let result = await promise;
+
+        return result;
+
     }
 }
 
