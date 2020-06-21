@@ -20,7 +20,7 @@ async function serveCustomer(customer) {
     let food = await cook.preperFood(order);
     console.log(`cooked ${customer.id}`);
     let tip = await customer.eatAndPay(food);
-    console.log(`paid ${customer.id}`);
+    console.log(`${customer.id} paid ${tip}`);
 }
 
 function serverCustomers(customers) {
