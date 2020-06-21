@@ -4,9 +4,9 @@
  
  The waiter serves customers food
  
- first the order from a menu
+ 1. first they order from a menu
  
- then the chef cooks the food
+ 2. then the chef cooks the food
  
- finally the customer is served eats and pays
+ 3. finally the customer is served eats and pays
  
