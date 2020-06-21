@@ -21,10 +21,10 @@ class Customer {
 
             setTimeout(function(){
 
-                //order random item from the menu
+                //tip based on how well cooked the food was
                 tip(2*food);
 
-            }, Math.floor(Math.random() * 4000));//random amount of time to order
+            }, Math.floor(Math.random() * 4000));//random amount of time to eat
             
         });
     }

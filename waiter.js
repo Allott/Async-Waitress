@@ -9,7 +9,7 @@ var c5 = new customer();
 
 var cook = new chef();
 
-let menu = [1000, 2000, 3000, 4000, 5000];
+let menu = [1000, 2000, 3000, 4000, 5000];//menu is just the cook times
 let customers = [c1,c2,c3,c4,c5];
 
 
